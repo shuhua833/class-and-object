@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+class rectangle
+{
+	private:
+		int length;
+		int breadth;
+		public:
+			void setdata(int l,int b)
+			{
+				length=l;
+				breadth=b;
+			}
+			void showdata()
+			{
+				cout<<"length="<<length<<endl;
+				cout<<"breadth="<<breadth<<endl;
+			}
+			int area()
+			{
+				return length*breadth;
+			}
+			int perimeter()
+			{
+				return 2*(length+breadth);
+			}
+}r;
+int main()
+{
+	r.setdata(4,2);
+	r.showdata();
+	cout<<"area="<<r.area()<<endl;
+	cout<<"perimeter=" <<r.perimeter();
+	return 0;
+}
